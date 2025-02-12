@@ -60,7 +60,7 @@ def show_and_save_plot(fig):
         fig.savefig(f"{file_path}/{file_name}.png")
         print("Your file saved successfully!")
     elif choice == 'no':
-        print("Thank you for use our application for visualization!")
+        pass
     else:
         print("\nInvalid choice...")
 
