@@ -3,6 +3,7 @@ from explore_dataset import explore_dataset
 from dataframes_operations import data_frames_operations
 from handle_missing_values import handle_missing_values
 from generate_stats import display_statictics
+from data_visualization import data_visualization
 
 class DataAnalyzer:
     def __init__(self):
@@ -14,13 +15,11 @@ class DataAnalyzer:
             print("4. Handle Missing Data")
             print("5. Generate Descriptive Statistics")
             print("6. Data Visualization")
-            print("7. Save Visualization")
-            print("8. Exit")
+            print("7. Exit")
             choice=int(input("Enter your choice:"))
             
             if choice==1:
                 load_data.load_dataset()
-            
             elif choice==2:
                 while True:
                     print("\nExplore data")
@@ -89,8 +88,9 @@ class DataAnalyzer:
             
             elif choice==5:
                 display_statictics.display_stats()
-                        
-            elif choice==8:
+            elif choice==6: 
+                data_visualization.ask_to_user()
+            elif choice==7:
                 print('\nYou are exit from the application!')
                 break
             else:
